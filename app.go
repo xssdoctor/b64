@@ -25,7 +25,6 @@ func main() {
 			return 
 		}
 		payload := matches[0][2]
-		fmt.Println(payload)
 		decodedPayload, err := decodeBase64URL(payload)
 		if err != nil {
 			fmt.Println("Error decoding payload")
